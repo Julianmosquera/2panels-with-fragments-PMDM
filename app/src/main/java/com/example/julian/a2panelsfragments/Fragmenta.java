@@ -33,12 +33,17 @@ public class Fragmenta extends Fragment {
 
     private void abreFragment() {
         //ponemos una TOAST para probar
-        CharSequence text = "Abriendooooo...";
-        int duration = Toast.LENGTH_SHORT;
-        // utilizamos getActivity ya que el contexto es el de la Activity que tiene al fragment
-        Toast toast = Toast.makeText(getActivity(), text, duration);
+
         Intent intent=new Intent(getActivity(),Fragmentb.class);
-        toast.show();
+
+
+       // CharSequence text = "Abriendooooo...";
+       // int duration = Toast.LENGTH_SHORT;
+        // utilizamos getActivity ya que el contexto es el de la Activity que tiene al fragment
+      //  Toast toast = Toast.makeText(getActivity(), text, duration);
+
+
+        //toast.show();
         startActivity(intent);
     }
 

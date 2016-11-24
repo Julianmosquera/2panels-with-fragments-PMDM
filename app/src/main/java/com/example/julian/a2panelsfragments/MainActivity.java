@@ -8,7 +8,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_fragmenta);
-        findViewById(R.id.container);
+        setContentView(R.layout.activity_main);
+
     }
 }

@@ -22,19 +22,23 @@ public class Fragmenta extends Fragment {
         // recogemos el boton del layout
         Button llamaFragment = (Button) rootView.findViewById(R.id.llamaFragment);
         // le añadimos funcionalidad al 'click'
-        llamaFragment.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                abreFragment();
+        llamaFragment.setOnClickListener (new View.OnClickListener() {
+          @Override
+            public void onClick(View v){
+                Intent intent=new Intent(getActivity(),Main2Activity.class);
+                startActivity(intent);
             }
+
+
         });
         return rootView;
     }
 
-    private void abreFragment() {
-        //ponemos una TOAST para probar
 
-        Intent intent=new Intent(getActivity(),Fragmentb.class);
+   // private void abreFragment() {
+
+
+       // Intent intent=new Intent(getActivity(),Main2Activity.class);
 
 
        // CharSequence text = "Abriendooooo...";
@@ -44,7 +48,7 @@ public class Fragmenta extends Fragment {
 
 
         //toast.show();
-        startActivity(intent);
-    }
+        //startActivity(intent);
+   // }
 
 }

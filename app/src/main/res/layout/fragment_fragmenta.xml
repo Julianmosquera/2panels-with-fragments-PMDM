@@ -15,6 +15,7 @@
         android:layout_height="wrap_content"
         android:text="Ejecutar Fragment_B"
         android:id="@+id/llamaFragment"
+
         />
 
 </LinearLayout>

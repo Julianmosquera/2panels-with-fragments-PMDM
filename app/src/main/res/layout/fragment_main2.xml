@@ -12,4 +12,14 @@
     tools:showIn="@layout/activity_main2">
 
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tb"
+        android:text="ADIOS"
+
+
+        />
+
+
 </RelativeLayout>

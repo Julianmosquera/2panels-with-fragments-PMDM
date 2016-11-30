@@ -23,10 +23,21 @@ public class Fragmenta extends Fragment {
         Button llamaFragment = (Button) rootView.findViewById(R.id.llamaFragment);
         // le añadimos funcionalidad al 'click'
         llamaFragment.setOnClickListener (new View.OnClickListener() {
+
           @Override
             public void onClick(View v){
-                Intent intent=new Intent(getActivity(),Main2Activity.class);
-                startActivity(intent);
+              if(getResources().getBoolean(R.bool.twoPaneMode)){
+                Toast.makeText(getActivity(), "Port", Toast.LENGTH_LONG).show();
+                  Intent intent=new Intent(getActivity(),Main2Activity.class);
+                  startActivity(intent);
+
+
+              }else {
+
+
+
+                  Toast.makeText(getActivity(), "Land", Toast.LENGTH_LONG).show();
+              }
             }
 
 
@@ -35,20 +46,6 @@ public class Fragmenta extends Fragment {
     }
 
 
-   // private void abreFragment() {
 
-
-       // Intent intent=new Intent(getActivity(),Main2Activity.class);
-
-
-       // CharSequence text = "Abriendooooo...";
-       // int duration = Toast.LENGTH_SHORT;
-        // utilizamos getActivity ya que el contexto es el de la Activity que tiene al fragment
-      //  Toast toast = Toast.makeText(getActivity(), text, duration);
-
-
-        //toast.show();
-        //startActivity(intent);
-   // }
 
 }

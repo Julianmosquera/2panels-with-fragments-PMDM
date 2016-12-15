@@ -29,9 +29,10 @@ public class Fragmenta extends Fragment {
 }
 
 
- Button btnHi;
-    View fragmentoPrincipal;
-final static String FRASE = "Hi world!";
+ //Button llamaFragment;
+  //  View Fragmenta;
+//final static String FRASE = "Hi world!";
+
 
 
 
@@ -45,6 +46,9 @@ final static String FRASE = "Hi world!";
         View rootView = inflater.inflate(R.layout.fragment_fragmenta, container, false);
         // recogemos el boton del layout
         Button llamaFragment = (Button) rootView.findViewById(R.id.llamaFragment);
+
+
+
         // le añadimos funcionalidad al 'click'
         llamaFragment.setOnClickListener (new View.OnClickListener() {
 
@@ -58,7 +62,7 @@ final static String FRASE = "Hi world!";
 
               }else {
 
-
+                comunicador.mensaje("COMUNICACION ENTRE FRAGMENTS");
 
                   Toast.makeText(getActivity(), "Land", Toast.LENGTH_LONG).show();
               }

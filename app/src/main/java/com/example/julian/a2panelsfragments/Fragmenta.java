@@ -29,9 +29,6 @@ public class Fragmenta extends Fragment {
 }
 
 
- //Button llamaFragment;
-  //  View Fragmenta;
-//final static String FRASE = "Hi world!";
 
 
 

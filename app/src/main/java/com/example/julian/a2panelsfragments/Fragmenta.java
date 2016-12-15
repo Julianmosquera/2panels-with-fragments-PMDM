@@ -14,6 +14,30 @@ import android.widget.Toast;
 
 
 public class Fragmenta extends Fragment {
+
+
+
+    Comunicador comunicador;
+
+    public interface Comunicador{
+        public void mensaje(String tb);
+    }
+
+    public void onAttach(Context contexto){
+        super.onAttach(contexto);
+        comunicador = (Comunicador)contexto;
+}
+
+
+ Button btnHi;
+    View fragmentoPrincipal;
+final static String FRASE = "Hi world!";
+
+
+
+
+
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
